@@ -1,0 +1,47 @@
+# Customer Support Agent Configuration
+
+llm:
+  model: "gpt-4o-mini"
+  temperature: 0.2
+  max_tokens: 1000
+
+embeddings:
+  model: "text-embedding-ada-002"
+
+knowledge_base:
+  path: "knowledge_base"
+  chunk_size: 300
+  chunk_overlap: 50
+  supported_formats: [".txt", ".md", ".yaml", ".json"]
+
+vectorstore:
+  path: "data/vectorstore"
+  similarity_threshold: 0.7
+
+escalation:
+  threshold: 0.7
+  min_sentiment: 0.3
+  keywords:
+    - refund
+    - lawsuit
+    - furious
+    - fraud
+    - broken
+    - data loss
+    - cancel account
+    - charge
+    - billing error
+    - security breach
+
+memory:
+  db_path: "data/conversations.db"
+  retention_days: 30
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins: ["*"]
+
+logging:
+  level: "INFO"
+  file: "logs/agent.log"
