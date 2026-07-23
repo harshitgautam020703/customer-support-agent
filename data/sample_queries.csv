@@ -1,0 +1,16 @@
+query,expected_escalation,expected_contains
+How do I reset my password?,False,password
+What features does CloudSync Pro offer?,False,features
+I want to cancel my subscription,True,cancel
+This product is terrible,True,understand
+How much does the Pro plan cost?,False,Pro
+I need a refund,True,refund
+Can you help me with sync issues?,False,sync
+My data was lost,True,data
+What are your supported platforms?,False,supported
+I want to speak to a manager,True,specialist
+How do I upgrade my plan?,False,upgrade
+This is fraudulent,True,fraud
+What's your security policy?,False,security
+I'm locked out of my account,True,account
+How do I share files?,False,share
